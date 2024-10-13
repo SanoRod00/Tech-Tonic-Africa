@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display</title>
+    <style>
+        input{
+            display: block;
+            margin: 5px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+        }
+        li{
+            display: inline;
+
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .container div{
+            border: 2px dashed red;
+        }
+        .non.block.elements{
+            display: none;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="non block elements">
+            <form action="/submit" method="post">
+            <label class="label1">First name:</label>
+            <input class="in1" type="text" placeholder="first name" required>
+            <label class="label2">Second name:</label>
+            <input class="in2" type="text" placeholder="second name" required>
+         <a href="#" target="_blank">Link1</a>  
+         <a href="#" target="_blank">Link2</a>  
+        
+        </form>
+        </div>
+        <div class="block-elements">
+            <h2>Unordered list</h2>
+         <ul>
+             <li>item1</li>
+             <li>item2</li>
+             <li>item3</li>
+         </ul>  
+        </div>
+    </div>
+</body>
+</html>
